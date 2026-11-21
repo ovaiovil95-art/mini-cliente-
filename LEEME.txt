@@ -1,0 +1,18 @@
+MINICLIENTE - mod de Fabric para Minecraft Java 1.20.1
+Muestra FPS, coordenadas y direccion en pantalla. Solo cliente.
+
+COMO OBTENER EL .JAR (no se puede compilar dentro del movil)
+Opcion A - En un PC con JDK 17 y Gradle 8.5:
+  gradle build
+  El .jar queda en build/libs/ (usa el que NO termina en -sources ni -dev).
+
+Opcion B - Con GitHub (gratis, sirve desde el movil):
+  1. Crea un repositorio nuevo en github.com.
+  2. Sube todos los archivos de esta carpeta, incluida .github/workflows/build.yml.
+  3. Ve a la pestana Actions, espera a que termine "Compilar mod".
+  4. Descarga el artefacto "minicliente-jar" (es un zip con el .jar dentro).
+
+COMO USARLO EN EL MOVIL
+  1. En PojavLauncher, SolidLauncher o MojoLauncher crea una instancia Fabric 1.20.1.
+  2. Copia minicliente-1.0.0.jar y Fabric API 0.92.2+1.20.1 a la carpeta mods de la instancia.
+  3. Anade tambien tus mods ligeros (Lithium, FerriteCore, etc.) y abre el juego.
